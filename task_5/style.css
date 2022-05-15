@@ -1,0 +1,52 @@
+.frame {
+    border: 2px solid blue;
+    width: 600px;
+    height: 400px;
+    padding: 5px;
+ }
+.control-block {
+    margin-bottom: 5px;   
+ }
+
+.btn-send {
+
+ }
+
+.btn-coord {
+
+ }
+
+.msg-block {
+    border: 2px solid blue;
+    height:371px;
+    padding: 0 40px;
+    
+    background-color: rgb(221, 255, 244);
+    
+ }
+
+
+
+input {
+    width: 406px;
+}
+
+.inputMessage{
+    text-align: end;
+    word-wrap: break-word;
+    border: 1px solid royalblue;
+    border-radius: 3px;
+    margin: 5px 0;
+   
+   
+}
+
+.outputMessage{
+    text-align: left;
+    word-wrap: break-word;
+    border: 1px solid red;
+    border-radius: 3px;
+    margin: 5px 0;
+   
+   
+}
