@@ -1,52 +1,76 @@
 .frame {
-    border: 2px solid blue;
+    border: 2px solid rgba(50, 155, 220, 0.6);
     width: 600px;
     height: 400px;
     padding: 5px;
- }
+    font-style: italic;
+    font-weight: 600;
+    color: blue;
+    font-size: large;
+}
+
 .control-block {
-    margin-bottom: 5px;   
- }
+    margin-bottom: 5px;
+}
 
-.btn-send {
+button,
+input {
+    border: 2px solid rgba(50, 155, 220, 0.6);
+    color: blue;
+}
 
- }
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgba(50, 155, 220, 0.6);
+}
 
-.btn-coord {
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgba(50, 155, 220, 0.6);
+}
 
- }
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgba(50, 155, 220, 0.6);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: rgba(50, 155, 220, 0.6);
+}
 
 .msg-block {
-    border: 2px solid blue;
-    height:371px;
+    border: 2px solid rgba(50, 155, 220, 0.6);
+    height: 371px;
     padding: 0 40px;
-    
-    background-color: rgb(221, 255, 244);
-    
- }
-
-
+    background-color: rgb(229, 253, 230);
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: relative;
+}
 
 input {
     width: 406px;
 }
 
-.inputMessage{
-    text-align: end;
+.msg-block>div {
+    border-radius: 7px;
+    max-width: 70%;
     word-wrap: break-word;
-    border: 1px solid royalblue;
-    border-radius: 3px;
     margin: 5px 0;
-   
-   
+    border: transparent;
+    padding: 5px 15px;
 }
 
-.outputMessage{
-    text-align: left;
-    word-wrap: break-word;
-    border: 1px solid red;
-    border-radius: 3px;
-    margin: 5px 0;
-   
-   
+.msg-block .inputMessage {
+    align-self: flex-end;
+    background-color: aqua;
+}
+
+.msg-block .outputMessage {
+    align-self: flex-start;
+    background-color: rgb(171, 171, 241);
 }
